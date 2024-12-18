@@ -1,0 +1,157 @@
+.card-update-main{
+    box-sizing: border-box;
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: linear-gradient(to right, #E0EAFC,#CFDEF3);
+    padding:1.5rem;
+    overflow-y: auto;
+}
+
+.card-update-main .back-icon{
+    position:absolute;
+    top:2.5rem;
+    left:20%;
+    cursor: pointer;
+}
+
+.card-update-main .back-icon img{
+    width:1.5rem;
+    height: 1.5rem;
+}
+
+.card-update-main h1{
+    font-family: 'dm-sans',sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin:0;
+    padding:1rem;
+    width:100%;
+    text-align: center;
+
+}
+
+.card-update-main .card-update-form{
+    width:40%;
+    box-sizing: border-box;
+ 
+
+    display: flex;
+    flex-direction: column;
+
+
+    
+}
+
+form#update-form {
+    width:100%;
+    box-sizing: border-box;
+    border:1px solid rgba(0,0,0,0.3);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:1rem;
+    background-color: #f7f7f7;
+    background: linear-gradient(-45deg, #fafbff, #ededed);
+    display: inline-flex;
+    flex-direction: column;
+
+    box-shadow: 
+    4px 4px 16px #b0b0b0,  /* Darker shadow on the bottom-right */
+    -4px -4px 16px #ffffff; /* Lighter shadow on the top-left */
+    transition: all 500ms;
+}
+
+
+
+.card-update-form label{
+    align-self: flex-start;
+    align-content: flex-start;
+    font-family: 'Open Sans';
+    font-size: .85rem;
+    font-weight: 500;
+    margin-top:.5rem;
+    text-align: center;
+}
+
+.card-update-form input, .card-update-form select{
+    width:100%;
+    box-sizing: border-box;
+    padding:.75rem .5rem;
+    margin:.5rem 0;
+    font-family: 'dm-sans',sans-serif;
+}
+
+
+.card-update-form .preview{
+    align-self: flex-start;
+    background-color: rgb(237, 235, 235);
+    border-radius:.5rem;
+    overflow: hidden;
+}
+.card-update-form .preview img{
+    
+    width:250px;
+    height: calc(250px * 9 / 16);
+}
+
+
+
+
+.card-update-main form .card-actions{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: flex-end;
+    padding:1rem 0;
+    box-sizing: border-box;
+    width:100%;
+}
+
+.card-update-main form .card-actions .btn{
+    padding:.5rem 1rem;
+    text-transform: capitalize;
+    font-family: 'Open Sans',sans-serif;
+    font-size: .875rem;
+    margin: 0 .5rem;
+    border-radius: 2rem;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.3);
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 500ms;
+}
+
+.card-update-main form .card-actions .btn:hover{
+    box-shadow: 0px 6px 10px rgba(0,0,0,0.3);
+
+}
+
+.card-actions a{
+    text-decoration: none;
+    color:white;
+}
+
+.card-actions a:active, a:visited
+{
+    text-decoration: none;
+    color:white;
+
+}
+
+.card-actions a.btn.delete{
+
+    background-color: tomato;
+    color:white;
+
+}
+
+.card-actions a.btn.update{
+    background-color: skyblue;
+    text-decoration: none;
+    color:white;
+}
+

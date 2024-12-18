@@ -1,0 +1,142 @@
+.addnewCustomer-main {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: linear-gradient(to right, #E0EAFC,#CFDEF3);
+    padding: 1.5rem;
+    overflow-y: auto;
+}
+
+.addnewCustomer-main .back-icon {
+    position: absolute;
+    top: 2.5rem;
+    left: 20%;
+    cursor: pointer;
+}
+
+.addnewCustomer-main .back-icon img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.addnewCustomer-main h1 {
+    font-family: 'dm-sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+.addnewCustomer-main .addnewCustomer-form {
+    width: 40%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+form#update-form {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f7f7f7;
+    background: linear-gradient(-45deg, #fafbff, #ededed);
+    box-shadow: 
+        4px 4px 16px #b0b0b0,  /* Darker shadow on the bottom-right */
+        -4px -4px 16px #ffffff; /* Lighter shadow on the top-left */
+    transition: all 500ms;
+}
+
+.addnewCustomer-form label {
+    align-self: flex-start;
+    font-family: 'Open Sans';
+    font-size: .85rem;
+    font-weight: 500;
+    margin-top: .5rem;
+    text-align: center;
+}
+
+.addnewCustomer-form input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: .75rem .5rem;
+    margin: .5rem 0;
+    font-family: 'dm-sans', sans-serif;
+}
+
+.addnewCustomer-main form .card-actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.addnewCustomer-main form .card-actions .btn {
+    padding: .5rem 1rem;
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+    font-size: .875rem;
+    margin: 0 .5rem;
+    border-radius: 2rem;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 500ms;
+}
+
+.addnewCustomer-main form .card-actions .btn:hover {
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card-actions a {
+    text-decoration: none;
+    color: white;
+}
+
+.card-actions a.btn.update {
+    background-color: skyblue;
+    color: white;
+}
+
+.card-actions a.btn.delete {
+    background-color: tomato;
+    color: white;
+}
+
+.addnewCustomer-form .error {
+    color: red;
+    font-size: .85rem;
+    font-weight: 400;
+    font-family: 'dm-sans', sans-serif;
+}
+
+.addnewCustomer-form .success {
+    color: green;
+    font-size: .85rem;
+    font-weight: 400;
+    font-family: 'dm-sans', sans-serif;
+}
+
+/* Style for the back button container */
+.addnewCustomer-main .back-icon{
+    position:absolute;
+    top:2.5rem;
+    left:20%;
+    cursor: pointer;
+}
+
+.addnewCustomer-main .back-icon img{
+    width:1.5rem;
+    height: 1.5rem;
+}
