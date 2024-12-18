@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airasia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/login.css">
+  </head>
+  <body>
+    <div class="login-main-holder">
+      <div class="login-card">
+        <div class="login-head">
+          <h1 class="dm-sans">Login</h1>
+        </div>
+        <div class="login-form inter">
+          <form id="login-form" action="#" method="post">
+            <label for="userName">User Name</label> <br />
+            <input
+              class="input-tile"
+              type="text"
+              name="userName"
+              placeholder="Enter username"
+              id="userName"
+            />
+            <br />
+            <div class="error"></div>
+            <label for="password">Password</label> <br />
+            <input
+              class="input-tile"
+              type="password"
+              name="password"
+              placeholder="Enter password"
+              id="password"
+            />
+            <br />
+            <div class="error"></div>
+            <input type="submit" value="Submit" />
+            <p>Forgot password?</p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script>
+        document.getElementById("login-form").addEventListener("submit", function(event) {
+          event.preventDefault(); // Prevents the form from submitting the traditional way
+          window.location.href = "card-list.html"; // Redirects to page.html
+        });
+      </script>
+  </body>
+</html>
